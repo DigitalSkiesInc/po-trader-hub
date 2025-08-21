@@ -29,8 +29,8 @@ const Dashboard = () => {
                       <TrendingUp className="w-5 h-5 text-success" />
                     </div>
                     <div>
-                      <p className="text-2xl font-bold text-foreground">+24.5%</p>
-                      <p className="text-sm text-muted-foreground">Monthly Return</p>
+                      {/* <p className="text-2xl font-bold text-foreground">+24.5%</p> */}
+                      <p className="text-sm text-muted-foreground">Improved profitability</p>
                     </div>
                   </div>
                 </CardContent>
@@ -43,8 +43,8 @@ const Dashboard = () => {
                       <Target className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <p className="text-2xl font-bold text-foreground">87.2%</p>
-                      <p className="text-sm text-muted-foreground">Win Rate</p>
+                      {/* <p className="text-2xl font-bold text-foreground">87.2%</p> */}
+                      <p className="text-sm text-muted-foreground">Precise signal execution</p>
                     </div>
                   </div>
                 </CardContent>
@@ -57,8 +57,8 @@ const Dashboard = () => {
                       <DollarSign className="w-5 h-5 text-success" />
                     </div>
                     <div>
-                      <p className="text-2xl font-bold text-foreground">$4,872</p>
-                      <p className="text-sm text-muted-foreground">Total Profit</p>
+                      {/* <p className="text-2xl font-bold text-foreground">$4,872</p> */}
+                      <p className="text-sm text-muted-foreground">Monitor channel performance</p>
                     </div>
                   </div>
                 </CardContent>
@@ -71,8 +71,8 @@ const Dashboard = () => {
                       <Users className="w-5 h-5 text-primary" />
                     </div>
                     <div>
-                      <p className="text-2xl font-bold text-foreground">156</p>
-                      <p className="text-sm text-muted-foreground">Active Signals</p>
+                      {/* <p className="text-2xl font-bold text-foreground">156</p> */}
+                      <p className="text-sm text-muted-foreground">Unlimited trading signals</p>
                     </div>
                   </div>
                 </CardContent>

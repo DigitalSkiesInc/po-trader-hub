@@ -24,11 +24,10 @@ const Premium = () => {
             <span className="text-sm font-medium">Premium Features</span>
           </div>
           <h2 className="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Unlock Premium Features
+            Unlock Live Account Trading
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Take your trading to the next level with advanced features, 
-            live account integration, and priority support.
+            For $4.99 one-time fee automate trading on live account with your preferred  trading channels
           </p>
         </div>
 
@@ -48,8 +47,8 @@ const Premium = () => {
               </div>
               <CardTitle className="text-2xl font-bold text-foreground">Premium</CardTitle>
               <div className="space-y-2">
-                <div className="text-4xl font-bold text-primary">$5</div>
-                <div className="text-muted-foreground">/month</div>
+                <div className="text-4xl font-bold text-primary">$4.99</div>
+                <div className="text-muted-foreground">One time purchase</div>
               </div>
             </CardHeader>
 

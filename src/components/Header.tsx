@@ -11,8 +11,12 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <Smartphone className="w-5 h-5 text-primary-foreground" />
+            <div className="w-10 h-auto rounded-lg flex items-center justify-center">
+              <img
+                src="/app_logo.png"
+                alt="Trading Dashboard Preview"
+                className="w-full rounded-2xl shadow-2xl"
+              />
             </div>
             <span className="text-xl font-semibold text-foreground">
               PO Signal Trader
@@ -38,7 +42,9 @@ const Header = () => {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Button variant="default" className="bg-primary hover:bg-primary-dark">
+              <a href="https://play.google.com/store/apps/details?id=com.digitalskies.testapp" target="_blank" rel="noopener noreferrer">
               Download App
+              </a>
             </Button>
           </div>
 

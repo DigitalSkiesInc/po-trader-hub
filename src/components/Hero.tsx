@@ -23,11 +23,14 @@ const Hero = () => {
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
+                asChild
                 size="lg" 
                 className="bg-primary hover:bg-primary-dark text-primary-foreground px-8 py-6 text-lg"
               >
+                <a href="https://play.google.com/store/apps/details?id=com.digitalskies.testapp" target="_blank" rel="noopener noreferrer">
                 <Play className="w-5 h-5 mr-2" />
                 Download on Google Play
+                </a>
               </Button>
               <Button 
                 variant="outline" 

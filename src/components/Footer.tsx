@@ -8,8 +8,12 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <Smartphone className="w-5 h-5 text-primary-foreground" />
+              <div className="w-10 flex items-center justify-center">
+                <img
+                src="/app_logo.png"
+                alt="Trading Dashboard Preview"
+                className="w-full rounded-2xl shadow-2xl"
+              />
               </div>
               <span className="text-lg font-semibold text-foreground">
                 PO Signal Trader
@@ -31,7 +35,7 @@ const Footer = () => {
               <a href="#premium" className="block text-sm text-muted-foreground hover:text-foreground transition-colors">
                 Premium
               </a>
-              <a href="#" className="block text-sm text-muted-foreground hover:text-foreground transition-colors">
+              <a href="https://play.google.com/store/apps/details?id=com.digitalskies.testapp&hl=en" className="block text-sm text-muted-foreground hover:text-foreground transition-colors">
                 Download App
               </a>
               <a href="#" className="block text-sm text-muted-foreground hover:text-foreground transition-colors">

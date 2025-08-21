@@ -71,7 +71,7 @@ const Features = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="#" 
+              href="https://play.google.com/store/apps/details?id=com.digitalskies.testapp&hl=en" 
               className="inline-flex items-center justify-center bg-primary hover:bg-primary-dark text-primary-foreground px-6 py-3 rounded-lg font-medium transition-colors"
             >
               Download for Android
@@ -80,7 +80,7 @@ const Features = () => {
               href="#premium" 
               className="inline-flex items-center justify-center border border-primary text-primary hover:bg-primary-light px-6 py-3 rounded-lg font-medium transition-colors"
             >
-              View Premium Features
+              Trade on Live account
             </a>
           </div>
         </div>
