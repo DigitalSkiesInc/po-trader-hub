@@ -68,10 +68,22 @@ const Premium = () => {
               </div>
 
               {/* CTA Button */}
-              <Button 
-                size="lg" 
+              <Button
+                size="lg"
                 className="w-full bg-primary hover:bg-primary-dark text-primary-foreground py-6 text-lg"
-                onClick={() => navigate('/checkout')}
+                onClick={() => {
+
+                  const userDetails = localStorage.getItem("user");
+
+                  if (userDetails) {
+                    navigate("/checkout");
+                  } else {
+                    navigate("/session-expired");
+                  }
+
+                }
+
+                }
               >
                 <Crown className="w-5 h-5 mr-2" />
                 Upgrade to Premium

@@ -31,7 +31,7 @@ const SessionExpired = () => {
             <div className="space-y-3">
               <p className="text-sm font-medium text-center">Don't have the app?</p>
               <a
-                href="https://play.google.com/store/apps/details?id=com.example.posignaltrader"
+                href="https://play.google.com/store/apps/details?id=com.digitalskies.testapp"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block"
