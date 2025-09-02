@@ -77,7 +77,7 @@ const Premium = () => {
               {/* Additional Info */}
               <div className="text-center space-y-2 pt-4 border-t border-border">
                 <p className="text-sm text-muted-foreground">
-                  7-day free trial • Cancel anytime
+                  One-time payment • Use Forever
                 </p>
                 <p className="text-xs text-muted-foreground">
                   Premium subscription includes all current and future features
