@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check, Crown, Zap } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Premium = () => {
+  const navigate = useNavigate();
   const features = [
     "Trade on live accounts with real money",
     "Advanced configuration options",
@@ -69,6 +71,7 @@ const Premium = () => {
               <Button 
                 size="lg" 
                 className="w-full bg-primary hover:bg-primary-dark text-primary-foreground py-6 text-lg"
+                onClick={() => navigate('/checkout')}
               >
                 <Crown className="w-5 h-5 mr-2" />
                 Upgrade to Premium
