@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
 import { Crown, Check, Shield, Bitcoin, Zap } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const formSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -19,6 +19,7 @@ const formSchema = z.object({
 const Checkout = () => {
   const [isProcessing, setIsProcessing] = useState(false);
   const { toast } = useToast();
+  const navigate = useNavigate();
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -32,14 +33,42 @@ const Checkout = () => {
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     setIsProcessing(true);
     
-    // Simulate checkout process
-    setTimeout(() => {
+    try {
+      const response = await fetch('/api/checkout', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(values),
+      });
+
+      if (response.status === 401) {
+        // Session expired - redirect to session expired page
+        navigate('/session-expired');
+        return;
+      }
+
+      if (!response.ok) {
+        throw new Error('Checkout failed');
+      }
+
+      const data = await response.json();
+      
+      if (data.paymentUrl) {
+        // Redirect to payment page
+        window.location.href = data.paymentUrl;
+      } else {
+        throw new Error('No payment URL received');
+      }
+
+    } catch (error) {
       setIsProcessing(false);
       toast({
-        title: "Order Submitted!",
-        description: "Your premium upgrade request has been submitted. You'll be notified via the app once activated.",
+        title: "Error",
+        description: "Something went wrong. Please try again.",
+        variant: "destructive",
       });
-    }, 2000);
+    }
   };
 
   const cryptoOptions = [
