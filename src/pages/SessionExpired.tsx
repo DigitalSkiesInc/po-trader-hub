@@ -12,9 +12,9 @@ const SessionExpired = () => {
             <div className="mx-auto w-16 h-16 bg-destructive/10 rounded-full flex items-center justify-center mb-4">
               <Clock className="w-8 h-8 text-destructive" />
             </div>
-            <CardTitle className="text-xl font-bold text-destructive">Session Expired</CardTitle>
+            <CardTitle className="text-xl font-bold text-destructive">Session Expired/Invalid</CardTitle>
             <p className="text-muted-foreground text-sm">
-              Your session has expired for security reasons
+              Your session is expired or invalid
             </p>
           </CardHeader>
           <CardContent className="space-y-6">

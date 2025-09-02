@@ -21,7 +21,7 @@ const Index = () => {
     const token = params.get('token');
 
     if (token) {
-        axios.post("http://localhost:3000/user-details", { token }, { withCredentials: true })
+        axios.post("https://payment-backend-nqln.onrender.com/user-details", { token }, { withCredentials: true })
         .then((response) => {
           const { name, number, email } = response.data;
 
