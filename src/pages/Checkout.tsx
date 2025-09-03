@@ -31,7 +31,7 @@ const Checkout = () => {
     },
   });
 
-  const [user, setUser] = useState<{ name: string; email: string; phone: string } | null>(null);
+  const [user, setUser] = useState<{ name: string; email: string; number: string } | null>(null);
 
   useEffect(() => {
     const userData = localStorage.getItem("user");
@@ -175,7 +175,7 @@ const Checkout = () => {
                       </div>
                       <div>
                         <p className="text-sm text-muted-foreground">Phone</p>
-                        <p className="text-lg font-medium">{user?.phone || "N/A"}</p>
+                        <p className="text-lg font-medium">{user?.number || "N/A"}</p>
                       </div>
                     </div>
 
